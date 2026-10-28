@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Shop<span>Ease</span></a>
+
+    <input type="search" id="search" placeholder="Search products...">
+
+    <button id="cartButton">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <p class="tagline">WELCOME TO SHOPEASE</p>
+      <h1>Shop Your<br><span>Favorite Products</span></h1>
+      <p>Discover great products at affordable prices.</p>
+      <a href="#products" class="shop-button">Shop Now →</a>
+    </div>
+    <div class="hero-icon">🛍️</div>
+  </section>
+
+  <main id="products">
+    <h2>Our Products</h2>
+
+    <div class="filters">
+      <button class="filter active" data-category="All">All</button>
+      <button class="filter" data-category="Fashion">Fashion</button>
+      <button class="filter" data-category="Electronics">Electronics</button>
+      <button class="filter" data-category="Home">Home</button>
+      <button class="filter" data-category="Accessories">Accessories</button>
+    </div>
+
+    <div id="productGrid" class="product-grid"></div>
+  </main>
+
+  <section id="cartSection" class="cart-section">
+    <div class="cart-heading">
+      <h2>Shopping Cart</h2>
+      <button id="closeCart">Close ×</button>
+    </div>
+    <div id="cartItems"></div>
+    <h3>Subtotal: <span id="subtotal">₹0</span></h3>
+    <p id="deliveryText">Delivery: ₹0</p>
+    <h3>Total: <span id="total">₹0</span></h3>
+    <button id="checkout" class="checkout">Checkout</button>
+    <p class="note">Demo checkout only. No payment will be processed.</p>
+  </section>
+
+  <footer>
+    <h2>Shop<span>Ease</span></h2>
+    <p>Your favorite online shopping destination.</p>
+    <p>© <span id="year"></span> ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
